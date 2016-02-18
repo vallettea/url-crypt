@@ -1,0 +1,43 @@
+{
+  "name": "url-crypt",
+  "version": "1.2.0",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "description": "json -> compressed encrypted url-safe base64 strings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelJCole/url-crypt.git"
+  },
+  "keywords": [
+    "base64",
+    "crypt",
+    "compress",
+    "urlsafe",
+    "verification",
+    "registration",
+    "encrypt",
+    "decrypt"
+  ],
+  "author": "Michael Cole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelJCole/url-crypt/issues"
+  },
+  "homepage": "https://github.com/MichaelJCole/url-crypt",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "express": "^4.11.2",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "urlsafe-base64": "^1.0.0"
+  }
+}
