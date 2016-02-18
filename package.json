@@ -1,8 +1,8 @@
 {
   "name": "url-crypt",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "engines": {
-    "node": "0.12.x"
+    "node": "4.2.4"
   },
   "description": "json -> compressed encrypted url-safe base64 strings.",
   "main": "index.js",
