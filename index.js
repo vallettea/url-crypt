@@ -28,7 +28,7 @@ module.exports = function (password, saltBytes) {
     saltBytes: saltBytes || 32,
   };
 
-  if (password.length < 43) throw new Error('Please use base64 password with at least 43 characters.  Google password "password generator" and don\'t be lazy.');
+  if (!Boolean(password) || password.length < 43) throw new Error('Please use base64 password with at least 43 characters.  Google password "password generator" and don\'t be lazy.');
 
   /**
    * Encrypt a Javascript object.
