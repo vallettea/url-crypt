@@ -47,7 +47,8 @@ module.exports = function (password, saltBytes) {
     var salt = crypto.randomBytes(urlCrypt.saltBytes);
     var buffer = Buffer.concat([salt,gzip]);
     // Encrypt - urlCrypt.password has 256 bits of randomness
-    var cipher = crypto.createCipher('aes-256-cbc', urlCrypt.password);
+    var iv = Buffer.alloc(16, 0);
+    var ciper = crypto.createCipheriv('aes-256-cbc', password, iv);
     buffer = Buffer.concat([cipher.update(buffer), cipher.final()]);      
     // Encode as urlSafeBase64
     var ret = URLSafeBase64.encode(buffer);
